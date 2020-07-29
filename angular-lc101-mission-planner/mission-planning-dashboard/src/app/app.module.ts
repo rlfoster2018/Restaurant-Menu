@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { CrewComponent } from './crew/crew.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
-import { CountriesComponent } from './countries/countries.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { CountriesComponent } from './countries/countries.component';
     CrewComponent,
     EquipmentComponent,
     ExperimentsComponent,
-    CountriesComponent
   ],
   imports: [
     BrowserModule
