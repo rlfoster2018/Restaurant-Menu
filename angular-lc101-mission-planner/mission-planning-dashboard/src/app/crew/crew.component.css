@@ -1,11 +1,24 @@
-button {
+li:hover {
     cursor: pointer;
 }
 
-button:hover {
-    color: blue;
+.displayBox {
+    height: 275px;
+    width: auto;
 }
 
-.editable-text {
-    cursor: pointer;
+img {
+    width: auto;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+
+.selected {
+    color: lightseagreen;
 }
