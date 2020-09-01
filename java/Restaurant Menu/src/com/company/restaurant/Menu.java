@@ -2,18 +2,33 @@ package com.company.restaurant;
 
 import java.util.ArrayList;
 
-public class Menu {
+public class Menu extends ArrayList<MenuItem>{
 
-    public Menu(MenuItem item) {
+    public ArrayList<MenuItem> Menu() {
+        ArrayList menuList = new ArrayList();
+        return menuList;
+    }
 
-        ArrayList specialMenu = new ArrayList();
-        ArrayList breakfastMenu = new ArrayList();
-        ArrayList lunchMenu = new ArrayList();
-        ArrayList dinnerMenu = new ArrayList();
-        ArrayList veganMenu = new ArrayList();
-        ArrayList dietMenu = new ArrayList();
-        ArrayList kidsMenu = new ArrayList();
+    public void addItem(Menu list, MenuItem item) {
+        list.add(item);
+    }
 
+    public void removeItemByIndex(Integer index) {
+        this.remove(index);
+
+        for (int i = 0; i < this.size(); i++) {
+            printItem(this.get(i));
+        }
+    }
+
+    public void printItem(MenuItem item) {
+        System.out.println("");
+        System.out.println("*****");
+        System.out.println("Name: " + item.courseName);
+        System.out.println("Cost: " + item.cost);
+        System.out.println(item.description);
+        System.out.println("*****");
     }
 
 }
+
